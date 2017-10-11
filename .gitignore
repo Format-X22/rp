@@ -1,0 +1,3 @@
+.idea
+*.html
+!views/land/**/main.html
