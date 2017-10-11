@@ -1,0 +1,71 @@
+include com
+include langs
+include social-icons
+
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+
+        //
+
+        link(href='css/theme.css' rel='stylesheet')
+        link(href='css/all.css'   rel='stylesheet')
+
+        link(rel='icon' type='image/png' href='img/logo/16.png' sizes='16x16')
+        link(rel='icon' type='image/png' href='img/logo/32.png' sizes='32x32')
+        link(rel='icon' type='image/png' href='img/logo/96.png' sizes='96x96')
+
+        link(rel='apple-touch-icon' href='img/logo/120.png')
+        link(rel='apple-touch-icon' href='img/logo/180.png' sizes='180x180')
+        link(rel='apple-touch-icon' href='img/logo/152.png' sizes='152x152')
+        link(rel='apple-touch-icon' href='img/logo/167.png' sizes='167x167')
+    body
+        nav.navbar.navbar-default.navbar-fixed-top
+            .container
+                .navbar-header
+                    a(href='/')
+                        img.rs-main_menu-logo(src='img/logo/origin.svg')
+                    +mobile-top-menu-toggle('top-menu-toggle')
+                #top-menu.navbar-collapse.collapse.navbar-responsive-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        +menu-item('/',                erb('l.main_menu.home'))
+                        +menu-item('/about',           erb('l.main_menu.about'))
+                        +menu-item('/term',            erb('l.main_menu.term'))
+                        +menu-item('/login',           erb('l.main_menu.login'))
+                        +menu-item('/register',        erb('l.main_menu.register'))
+                        +langs.visible-xs
+                        li.dropdown.hidden-xs
+                            a.dropdown-toggle(
+                                href='#'
+                                data-toggle='dropdown'
+                                role='button'
+                                aria-haspopup='true'
+                                aria-expanded='false'
+                            )
+                                img(src='/img/flag.png' height='18px')
+                                span.caret
+                            ul.dropdown-menu
+                                +langs
+
+        //
+
+        script(src='js/lib/jquery.js')
+        script(src='js/lib/bootstrap.js')
+
+        footer.rs-footer
+            .container
+                .row
+                    .col-md-12
+                        +social-icons
+                .row
+                    .col-md-12.rs-copyright-col
+                        span.rs-copyright Copyright Right Platform
+
+        #to-top.to-top.hidden
+            +icon('chevron-up')
+
+        //
+
+        script(src='js/all.js')
