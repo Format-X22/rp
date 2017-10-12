@@ -109,3 +109,36 @@ body {
         width: 100%;
     }
 }
+
+.cs-social {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cs-social.cs-facebook {
+     background: url('../img/facebook.svg') no-repeat;
+     background-size: 85px;
+}
+
+.cs-social.cs-twitter {
+     background: url('../img/twitter.svg') no-repeat;
+     background-size: 85px;
+}
+
+.cs-social.cs-mail {
+     background: url('../img/mail.svg') no-repeat;
+     background-size: 85px;
+}
+
+.cs-social.cs-bitcointalk {
+     background: url('../img/bitcointalk.svg') no-repeat;
+     background-size: 85px;
+}
+
+.cs-social.cs-github {
+     background: url('../img/github.svg') no-repeat;
+     background-size: 85px;
+}
