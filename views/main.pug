@@ -47,7 +47,7 @@ html
                             ul.dropdown-menu
                                 +langs
 
-        .rp-content
+        .rp-content.rp-first-slide
             .container
                 .row
                     .col-md-12.text-center.rp-hello-container
@@ -56,22 +56,101 @@ html
                         p.rp-hello-hint!= erb('l.about.hint')
                         a(href='#about'): +icon('chevron-down').rp-go-down.hidden-xs
 
-        .rp-content.rp-about
+        .rp-content.rp-about.rp-total-divider
             #about.container
                 .row
                     .col-md-12
                         h2 Принцип работы
                         hr
                         img(src='/img/main_di.svg').center-block.rp-diagram
+                        h3 RPT - Right Platform Token
+                        p ERC20 токен
+                        h3 RPO - Right Platform Organization
+                        p ERC20 токен
+                        h3 RPR - Right Platform Right
+                        p ERC20 токен
                         h2 Обмен
                         hr
                         img(src='/img/exchange_di.svg').center-block.rp-diagram
+                        h3 Buy
+                        p abc
+                        h3 Exchange
+                        p abc
                         h2 Организации
                         hr
                         img(src='/img/rpo_di.svg').center-block.rp-diagram
+                        h3 Controls
+                        p abc
+                        br
+                        h4 M-control
+                        p abc
+                        br
+                        h4 V-control
+                        p abc
+                        br
+                        h4 S-control
+                        p abc
+                        br
+                        h3 Features
+                        p abc
+                        br
+                        h4 Fixed
+                        p abc
+                        br
+                        h4 PoS
+                        p abc
+                        br
+                        h4 Dividends
+                        p abc
+                        br
+                        h4 Final
+                        p abc
+                        br
+                        h4 Replication
+                        p abc
                         h2 Права
                         hr
                         img(src='/img/rpr_di.svg').center-block.rp-diagram
+                        h3 Properties
+                        p abc
+                        br
+                        h4 Limitable
+                        p abc
+                        br
+                        h4 Mintable
+                        p abc
+                        br
+                        h4 Markable
+                        p abc
+                        br
+                        h3 Features
+                        p abc
+                        br
+                        h4 PoS
+                        p abc
+                        br
+                        h4 Replication
+                        p abc
+
+        .rp-content.rp-ico.rp-total-divider
+            #ico.container
+                .row
+                    .col-md-12
+                        h2 ICO
+                        p abc
+                        .rp-ico-time.text-center 01 december 2017
+
+        .rp-content.rp-docs.rp-total-divider
+            #docs.container
+                .row
+
+        .rp-content.rp-roadmap.rp-total-divider
+            #roadmap.container
+                .row
+
+        .rp-content.rp-team.rp-total-divider
+            #team.container
+                .row
 
         script(src='js/lib/jquery.js')
         script(src='js/lib/bootstrap.js')
