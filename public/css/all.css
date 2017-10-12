@@ -79,17 +79,6 @@ body {
     color: #555;
 }
 
-@media (max-width: 767px) {
-    .rp-hello-container {
-        height: calc(100vh - 50px);
-    }
-
-    .rp-hello-container .rp-hello {
-        font-size: 250%;
-        margin-top: 0;
-    }
-}
-
 .rp-about {
     border-top: 2px solid #555;
 }
@@ -100,4 +89,19 @@ body {
 
 .rp-about h2 {
     margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+    .rp-hello-container {
+        height: calc(100vh - 50px);
+    }
+
+    .rp-hello-container .rp-hello {
+        font-size: 250%;
+        margin-top: 0;
+    }
+
+    .rp-about .rp-diagram {
+        width: 100%;
+    }
 }
