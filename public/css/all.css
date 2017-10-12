@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.navbar .navbar-toggle {
+    border: 0;
+}
+
 body {
     background-color: #555;
 }
