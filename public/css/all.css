@@ -90,6 +90,14 @@ body {
     }
 }
 
-.rb-about {
+.rp-about {
     border-top: 2px solid #555;
+}
+
+.rp-about .rp-diagram {
+    width: 50%;
+}
+
+.rp-about h2 {
+    margin-top: 120px;
 }

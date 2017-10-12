@@ -56,11 +56,22 @@ html
                         p.rp-hello-hint!= erb('l.about.hint')
                         a(href='#about'): +icon('chevron-down').rp-go-down.hidden-xs
 
-        .rp-content.rb-about
+        .rp-content.rp-about
             #about.container
                 .row
                     .col-md-12
-                        //
+                        h2 Общий принцип работы
+                        hr
+                        img(src='/img/main_di.svg').center-block.rp-diagram
+                        h2 Обмен
+                        hr
+                        img(src='/img/exchange_di.svg').center-block.rp-diagram
+                        h2 Организации
+                        hr
+                        img(src='/img/rpo_di.svg').center-block.rp-diagram
+                        h2 Права
+                        hr
+                        img(src='/img/rpr_di.svg').center-block.rp-diagram
 
         script(src='js/lib/jquery.js')
         script(src='js/lib/bootstrap.js')
