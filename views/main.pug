@@ -22,19 +22,17 @@ html
         link(rel='apple-touch-icon' href='img/logo/152.png' sizes='152x152')
         link(rel='apple-touch-icon' href='img/logo/167.png' sizes='167x167')
     body
-        nav.navbar.navbar-default.navbar-fixed-top
-            .container
+        nav.navbar.navbar-default
+            .container.container-fluid
                 .navbar-header
-                    a(href='/')
-                        img.rs-main_menu-logo(src='img/logo/origin.svg')
                     +mobile-top-menu-toggle('top-menu-toggle')
                 #top-menu.navbar-collapse.collapse.navbar-responsive-collapse
                     ul.nav.navbar-nav.navbar-right
-                        +menu-item('/',                erb('l.main_menu.home'))
-                        +menu-item('/about',           erb('l.main_menu.about'))
-                        +menu-item('/term',            erb('l.main_menu.term'))
-                        +menu-item('/login',           erb('l.main_menu.login'))
-                        +menu-item('/register',        erb('l.main_menu.register'))
+                        +menu-item('#about',   erb('l.menu.about'))
+                        +menu-item('#ico',     erb('l.menu.ico'))
+                        +menu-item('#docs',    erb('l.menu.docs'))
+                        +menu-item('#roadmap', erb('l.menu.roadmap'))
+                        +menu-item('#team',    erb('l.menu.team'))
                         +langs.visible-xs
                         li.dropdown.hidden-xs
                             a.dropdown-toggle(
@@ -49,19 +47,32 @@ html
                             ul.dropdown-menu
                                 +langs
 
-        //
+        .rp-content
+            .container
+                .row
+                    .col-md-12.text-center.rp-hello-container
+                        p.rp-hello-spacer
+                        h1.rp-hello Right Platform
+                        p.rp-hello-hint!= erb('l.about.hint')
+                        a(href='#about'): +icon('chevron-down').rp-go-down.hidden-xs
+
+        .rp-content.rb-about
+            #about.container
+                .row
+                    .col-md-12
+                        //
 
         script(src='js/lib/jquery.js')
         script(src='js/lib/bootstrap.js')
 
-        footer.rs-footer
+        footer.rp-footer
             .container
                 .row
                     .col-md-12
                         +social-icons
                 .row
-                    .col-md-12.rs-copyright-col
-                        span.rs-copyright Copyright Right Platform
+                    .col-md-12.rp-copyright-col.text-center
+                        span.rp-copyright Copyright Right Platform
 
         #to-top.to-top.hidden
             +icon('chevron-up')

@@ -1,8 +1,15 @@
 {
-  "main_menu": {
-    
+  "menu": {
+    "about": "_EMPTY_",
+    "ico": "_EMPTY_",
+    "docs": "_EMPTY_",
+    "roadmap": "_EMPTY_",
+    "team": "_EMPTY_"
   },
   "component": {
     
+  },
+  "about": {
+    "hint": "_EMPTY_"
   }
 }
