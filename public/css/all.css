@@ -134,6 +134,7 @@ h2 {
 
 .rp-ico .rp-ico-time {
     font-size: 700%;
+    margin-top: 130px;
 }
 
 @media (max-width: 767px) {
